@@ -63,8 +63,8 @@
                 span.innerText = "Please enter description of note!!";
                 document.getElementById('noteparent').appendChild(span);
             }else{
-                if(insertUserNote(title, note)){
-                }else{
+                var res = insertUserNote(title, note); 
+                if(!res.status){
                     alert('something went wrong!!');
                 }
                 Swal.clickConfirm();
