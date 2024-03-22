@@ -9,4 +9,7 @@ module.exports = {
     deleteNotesController: async (id) =>{
         return await todoModels.deleteNotesModel(id);
     },
+    getNotesController: async () =>{
+        return await todoModels.getNotesModel();
+    },
 }
